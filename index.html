@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks Planner</title>
+    <script defer src="calcul.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backcontain">
+      <div class="container">
+        <div class="workspace">
+            <div class="topside">
+                <h1>Task Planner</h1>
+                <button class="backBtn">Back</button>
+            </div>
+            <div class="taskWelcome">
+                <input id="inpNew" type="text" placeholder="Add your Tasks Here">
+                <button class="newBtn">Add</button>
+            </div>
+          <div class="taskList">
+               
+
+          </div>
+          <div class="finishedList">
+               
+
+          </div>
+          <div class="update">
+            <label for="title">Title : </label>
+            <input type="text" name="" id="inpTitle">
+            <label for="inpDescription">Description : </label>
+            <textarea name="" cols="30" rows="10" id="inpDescription"></textarea>
+            <label for="inpTime">Time : </label>
+            <input type="time" name="" id="inpTime">
+            <label for="inpDate">Date: </label>
+            <input type="date" name="" id="inpDate">
+          </div>
+          <!-- <div class="display">
+            <p id="pTitle">Heloo</p>
+            <p id="pDescription">this</p>
+            <p id="pTime">is </p>
+            <p id="pDate">a test</p>
+          </div> -->
+          <div class="display">
+            <h2>Task Details</h2>
+            <div class="task-details">
+              <div class="detail">
+                <span class="detail-label">Title:</span>
+                <p id="pTitle" class="detail-value">Hello</p>
+              </div>
+              <div class="detail">
+                <span class="detail-label">Description:</span>
+                <p id="pDescription" class="detail-value">This</p>
+              </div>
+              <div class="detail">
+                <span class="detail-label">Time:</span>
+                <p id="pTime" class="detail-value">Is</p>
+              </div>
+              <div class="detail">
+                <span class="detail-label">Date:</span>
+                <p id="pDate" class="detail-value">A Test</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="crudlist">
+            <button class="crud" id="ADD">ADD Detailed</button>
+            <button class="crud" id="SAVE">Save</button>
+            <button class="crud" id="EDIT">Edit</button>
+            <button class="crud" id="DELETE">Delete</button>
+            <button class="crud" id="CANCEL">Cancel</button>
+            <button class="crud" id="DELALL">Delete All</button>
+            <button class="crud" id="FINISHED">Finished</button>
+            <button class="crud" id="TASKTAB">Tasks</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.backcontain{
+    
+    background-image: url("backg.png");
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(61, 152, 168);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+
+}
+.workspace{
+    height: 80vh;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.topside{
+    display: flex;
+    justify-content: space-between;
+
+}
+.taskWelcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taskList{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    height: 60vh;
+    overflow-y: scroll;
+}
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    width: 300px;
+  }
+  
+  .task:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .task label {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .task input[type="checkbox"] {
+    cursor: pointer;
+  }
+  
+  
+.finishedList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(43, 70, 226);
+    padding: 20px;
+    border-radius: 10px;
+}
+.update{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 60vh;
+    /* display: none; */
+}
+.update input{
+    height: 7vh;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#inpNew{
+    border-radius: 10px 0px 0px 10px;;
+    outline: 2px solid #FEBF00;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+    flex: 1; /* Take up remaining space in the container */
+}
+#inpNew:focus{
+    outline-offset: 5px;
+    background-color: #fff;
+  }
+  #inpNew:focus ~ .newBtn{
+    height: 51px;
+  }
+  .newBtn{
+    border: none;
+  background-color: #FEBF00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0px 16px 16px 0px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  height: 47px;
+  }
+  .newBtn:hover {
+    background-color: #FFD700;
+  }
+  /* .display {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-details {
+    margin-top: 10px;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    width: 100px;
+  }
+  
+  .detail-value {
+    margin-left: 10px;
+  }
+   */
+   .display {
+    background-color: #f9f9f9;
+  padding-left: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 100%;
+  max-height: calc(80vh - 40px);
+  overflow: auto;
+  word-wrap: break-word;
+  
+  }
+  
+  .task-details {
+    margin-top: 10px;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    width: 100px;
+    color: #333;
+  }
+  
+  .detail-value {
+    margin-left: 10px;
+  }
+  
+  #inpNew {
+    border-radius: 10px 0 0 10px;
+    outline: 2px solid #FEBF00;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+    flex: 1;
+  }
+  
+  #inpNew:focus {
+    outline-offset: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(254, 191, 0, 0.5);
+  }
+  #SAVE, #EDIT,#DELETE,#CANCEL,#TASKTAB{
+    display: none;
+  }
